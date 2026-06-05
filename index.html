@@ -232,6 +232,10 @@ Donate Today
 <div class="metric">501(c)(3)</div>
 <p>Public Charity</p>
 </div>
+<div class="card">
+  <h3>Total Donations</h3>
+  <div class="metric" id="donationTotal">$0</div>
+  <p>Live updates</p>
 </div>
 
 </div>
@@ -494,6 +498,19 @@ journeyforgoodfoundation@gmail.com
 </p>
 
 </footer>
+    <script>
+let donationTotal = 0;
+
+function updateDonations() {
+  const randomIncrease = Math.floor(Math.random() * 800); 
+  donationTotal += randomIncrease;
+
+  document.getElementById("donationTotal").innerText =
+    "$" + donationTotal.toLocaleString();
+}
+
+setInterval(updateDonations, 2500);
+</script>
 
 </body>
 </html>
