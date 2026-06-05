@@ -29,7 +29,10 @@ body {
 .logo {
     font-weight: bold;
 }
-
+banner img {
+    width: 100%;
+    display: block;
+}
 /* Hero */
 .hero {
     text-align: center;
