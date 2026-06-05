@@ -4,3 +4,52 @@ body {
     background: #f4f4f4;
     color: #333;
 }
+
+/* Navbar */
+.navbar {
+    background: #111;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    background: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    color: #4a90e2;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Content boxes */
+.content {
+    background: white;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #111;
+    color: white;
+    padding: 20px;
+}
