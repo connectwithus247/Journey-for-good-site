@@ -128,3 +128,93 @@ footer {
     color: #666;
     font-size: 0.95rem;
 }
+#board {
+    padding: 60px 20px;
+    background: #ffffff;
+}
+
+#board h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.trustee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.trustee-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.trustee-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.trustee-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+}
+
+.trustee-card p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+#board {
+    padding: 60px 20px;
+    background: #ffffff;
+}
+
+#board h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.trustee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.trustee-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.trustee-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.trustee-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+}
+
+.trustee-card p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
