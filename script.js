@@ -1,28 +1,12 @@
-let donationTotal = 80000;
+const donationTotal = 80000;
 const donationGoal = 500000;
 
-function updateDonations() {
+document.getElementById("donationTotal").innerText =
+    "$" + donationTotal.toLocaleString();
 
-    const increase = Math.floor(Math.random() * 300);
+document.getElementById("donationProgress").value =
+    donationTotal;
 
-    donationTotal += increase;
-
-    if (donationTotal > donationGoal) {
-        donationTotal = donationGoal;
-    }
-
-    document.getElementById("donationTotal").innerText =
-        "$" + donationTotal.toLocaleString();
-
-    document.getElementById("donationProgress").value =
-        donationTotal;
-
-    const percent = (donationTotal / donationGoal) * 100;
-
-    document.getElementById("progressText").innerText =
-        percent.toFixed(1) + "% of goal reached";
-}
-
-updateDonations();
-
-setInterval(updateDonations, 3000);
+document.getElementById("progressText").innerText =
+    ((donationTotal / donationGoal) * 100).toFixed(1) +
+    "% of goal reached";
