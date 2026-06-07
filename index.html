@@ -828,39 +828,34 @@ journeyforgoodfoundation@gmail.com
 
 </footer>
     <script>
-
-
+<script>
 let donationTotal = 80000;
 const donationGoal = 500000;
+const maxDonationDisplay = 80100;
 
 function updateDonations() {
 
-  const increase = Math.floor(Math.random() * 300);
+    const increase = Math.floor(Math.random() * 20);
 
-  donationTotal += increase;
+    donationTotal += increase;
 
-  if (donationTotal > donationGoal) {
-      donationTotal = donationGoal;
-  }
+    if (donationTotal > maxDonationDisplay) {
+        donationTotal = maxDonationDisplay;
+    }
 
-  document.getElementById("donationTotal").innerText =
-      "$" + donationTotal.toLocaleString();
+    document.getElementById("donationTotal").innerText =
+        "$" + donationTotal.toLocaleString();
 
-  document.getElementById("donationProgress").value =
-      donationTotal;
+    document.getElementById("donationProgress").value =
+        donationTotal;
 
-  const percent =
-      (donationTotal / donationGoal) * 100;
-
-  document.getElementById("progressText").innerText =
-      percent.toFixed(1) + "% of goal reached";
+    document.getElementById("progressText").innerText =
+        ((donationTotal / donationGoal) * 100).toFixed(1) +
+        "% of goal reached";
 }
 
 updateDonations();
-
-setInterval(updateDonations, 3000);
-
+setInterval(updateDonations, 10000);
 </script>
-
 </body>
 </html>
