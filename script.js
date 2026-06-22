@@ -1,4 +1,4 @@
-const donationTotal = 80200;
+const donationTotal = 80500;
 const donationGoal = 500000;
 
 document.getElementById("donationTotal").innerText =
